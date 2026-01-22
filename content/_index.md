@@ -2,7 +2,7 @@
 title: "Matthew Petty"
 ---
 
-{{< figure src="/images/avatar.webp" alt="Matthew Petty" class="profile-image" >}}
+{{< figure src="images/avatar.webp" alt="Matthew Petty" class="profile-image" >}}
 
 *Writing by hand because I still can*
 
