@@ -1,0 +1,12 @@
+/* Profile image on homepage */
+.post-content > figure:first-of-type {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.post-content > figure:first-of-type img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}

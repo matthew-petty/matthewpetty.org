@@ -1,0 +1,76 @@
+baseURL = 'https://matthewpetty.org/'
+languageCode = 'en-us'
+title = 'Matthew Petty'
+theme = 'PaperMod'
+
+# RSS feed settings - full content in feed
+[outputs]
+  home = ['HTML', 'RSS']
+
+[params]
+  author = 'Matthew Petty'
+  description = 'Writing by hand because I still can'
+
+  # Favicon paths
+  [params.assets]
+    favicon = '/favicon.ico'
+    favicon16x16 = '/favicon-16x16.png'
+    favicon32x32 = '/favicon-32x32.png'
+    apple_touch_icon = '/apple-touch-icon.png'
+
+  # Dark mode: auto detects preference, user can toggle
+  defaultTheme = 'auto'
+
+  # Show toggle button for dark/light mode
+  ShowThemeToggle = true
+
+  # Show reading time on posts
+  ShowReadingTime = true
+
+  # Show share buttons on posts
+  ShowShareButtons = false
+
+  # Show breadcrumb navigation
+  ShowBreadCrumbs = true
+
+  # Show post navigation (prev/next)
+  ShowPostNavLinks = true
+
+  # Show code copy button
+  ShowCodeCopyButtons = true
+
+  # Social icons
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/matthew-petty'
+
+  [[params.socialIcons]]
+    name = 'linkedin'
+    url = 'https://linkedin.com/in/matthew-petty'
+
+  [[params.socialIcons]]
+    name = 'email'
+    url = 'mailto:mpetty@patternzones.com'
+
+# Main menu navigation
+[menu]
+  [[menu.main]]
+    name = 'Now'
+    url = '/now/'
+    weight = 10
+
+  [[menu.main]]
+    name = 'Blog'
+    url = '/blog/'
+    weight = 20
+
+# RSS feed configuration - include full content
+[services]
+  [services.rss]
+    limit = 20
+
+# Markup settings
+[markup]
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = false
